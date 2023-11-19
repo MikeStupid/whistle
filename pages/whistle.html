@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Whistle</title>
+		<link rel="icon" type="image/png" href="whistle.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<center>
+      <button height="20px" width="20px">Play</button>
+      <script>
+          document.querySelector('button').addEventListener('click', () => {
+              document.querySelector('video.lobotomy').play();
+          });
+      </script>
+      <br>
+      <video max-width="100%" height="auto" playsinline autoplay loop class="lobotomy">
+  			<source src="whistle.mp4" type="video/mp4">
+  		</video>
+		</center>
+	</body>
+</html>
